@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "702f1bed-c4b5-4404-8a7d-11aa19765121",
+		"name": "Food-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create restraunt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"asdf\",\r\n    \"rating\": 4,\r\n    \"menuitems\": [\r\n        {\r\n           \r\n            \"name\": \"noddles\",\r\n            \"price\": 40\r\n        },\r\n        {\r\n            \"name\": \"maggi\",\r\n            \"price\": 30\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/restautrant/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"restautrant",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all Restautrants",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"asdf\",\r\n    \"rating\": 4,\r\n    \"menuitems\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"noddles\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"name\": \"maggi\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/restautrant/read",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"restautrant",
+						"read"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "872f8f49-43f8-4c8c-b4ec-e63f9300b8b4",
+			"key": "URL",
+			"value": "",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
